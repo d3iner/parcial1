@@ -187,9 +187,10 @@ a{
     width: 48%;
 }
 #container__te-ayudamos h1{
+    position: relative;
     background-color: transparent;
     font-family: 'Hind Vadodara', sans-serif;
-    font-size: 72px;
+    font-size: 87px;
     font-weight: 300;
     line-height: 80px;
     letter-spacing: -0.01em;
@@ -197,6 +198,16 @@ a{
     color: #331B3B;
     padding-bottom: 15px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#container__te-ayudamos h1::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background-color: #FDC021;
+    height: 18px;
+    width: 55%;
+    bottom: 23px;
+    left: 0;
 }
 #container__te-ayudamos h1 b{
     position: relative;
@@ -250,6 +261,98 @@ a{
 #container__image-group3 img{
     position: relative;
     z-index: -2;
+}
+.container__card{
+    display: flex;
+    flex-direction: row !important;
+    justify-content:center;
+    padding-top: 100px;
+}
+.container__card__cards{
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+    height: 20%;
+    width: 250px;
+    margin-inline: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.container__card__cards div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+.container__card__cards h1{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px !important;
+    line-height: 137.3%;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    text-align: left !important;
+
+    color: #331B3B;
+}
+.container__card__cards p{
+    font-family: 'Hind Vadodara', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 145.3%;
+    /* or 22px */
+
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+
+    color: rgba(51, 27, 59, 0.66);
+}
+.container__card__cards div img{
+    height: 30px;
+    width: 30px;
+}
+#container_lo-que-hacemos{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 100px;
+}
+#container_lo-que-hacemos h1{
+    position: relative;
+    z-index: 2;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: lighter;
+    line-height: 106.3%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #331B3B;
+}
+#container-2__title::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background-color: #FDC021;
+    height: 10px;
+    width: 13%;
+    bottom: 10px;
+    right: 36%;
+}
+#container_lo-que-hacemos h1 b{
+    font-weight: bolder;
+}
+#container_lo-que-hacemos h1 p{
+    height: 60px;
+}
+#container__image-group4{
+    width: 1500px;
+    min-width: 1500px;
 }
 
 
@@ -344,8 +447,10 @@ a{
         right: 0;
     }
     #container__te-ayudamos{
+        align-items: start;
         margin-top: 0px;
-        width: 80%;
+        width: 95%;
+        margin-inline: 10px;
     }
     #container__image-group3{
         display: flex;
@@ -362,7 +467,7 @@ a{
         left: 0px;
     }
     #container__te-ayudamos a{
-        width: 30%;
+        align-items: start;
     }
     
     
@@ -425,6 +530,12 @@ a{
         background-color: white;
         transition: all 0.2s ease-out;
     }
+    #menu__socialmedia{
+        margin-left: 20px;
+    }
+    #menu__socialmedia a{
+        padding-inline: 5px;
+    }
     #menu__burger{
         display: flex;
     }
@@ -456,9 +567,35 @@ a{
         min-height: 400px;
         min-width: 400px;
     }
+    #container__te-ayudamos h1{
+        font-size: 64px;
+        line-height: 60px;
+    }
     #container__te-ayudamos a{
         width: 50%;
         min-width: 150px;
+    }
+    .container__card{
+        display: flex;
+        flex-direction: column !important;
+        justify-content:center;
+        padding-top: 0px;
+    }
+    #container_lo-que-hacemos{
+        margin-top: 5px;
+    }
+    .container__card__cards{
+        display: flex;
+        justify-content: start;
+        padding: 15px;
+        margin-block: 5px;
+        height: 120px;
+        width: 80%;
+        margin-inline: 25px;
+    }
+    .container__card__cards h1{
+        height: 16px !important;
+        min-height: 16px !important;
     }
     /* FOOTER */
     .footer__container__contact div{
