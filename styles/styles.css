@@ -233,13 +233,16 @@ a{
     border-radius: 10px;
     overflow: hidden;
 }
-/* #container__te-ayudamos p{
-    margin-block: 20px;
-} */
+.container__te-ayudamos__img{
+    height: 450px;
+    width: 450px;
+}
 #container__image-group3{
     position: relative;
     z-index: -2;
     width: 52%;
+    min-height: 450px;
+    min-width: 450px;
 }
 #container__image-group3 img{
     position: relative;
@@ -330,8 +333,33 @@ a{
     .menu__socialmedia__a{
         margin-inline: 5px;
     }
-    /* ACA VAN ESTILOS DE SECTION */
-    
+    #container-1{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        right: 0;
+    }
+    #container__te-ayudamos{
+        margin-top: 0px;
+        width: 80%;
+    }
+    #container__image-group3{
+        display: flex;
+        align-items: end;
+        width: 100%;
+    }
+    #container__te-ayudamos__img{
+        position: relative;
+        height: 60%;
+        min-height: 500px;
+        width: 60%;
+        min-width: 500px;
+        top: 0px;
+        left: 0px;
+    }
+    #container__te-ayudamos a{
+        width: 30%;
+    }
     /* FOOTER */
     .footer__container{
         width: 100%;
@@ -367,6 +395,9 @@ a{
 }
 @media screen and (max-width: 600px){
     .menu{
+        position: absolute;
+        right: 5px;
+        z-index: 50;
         flex-direction: row-reverse;
     }
     .menu__item:hover::after,
@@ -376,12 +407,13 @@ a{
     }
     .menu__item__container{
         position: fixed;
-        top: 100px;
+        z-index: 2;
+        top: 0px;
         left: -120%;
         display: flex;
         flex-direction: column;
         text-align: center;
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         background-color: white;
         transition: all 0.2s ease-out;
@@ -389,14 +421,37 @@ a{
     #menu__burger{
         display: flex;
     }
+    #burger__x{
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #burger__x__img{
+        height: 20px;
+        width: 20px;
+    }
     #burger{
-        display: none;
+        position: absolute;
+        right: 10px;
+        z-index: 0;
     }
     #burger:checked + .menu__item__container{
         left: 0px;
     }
+    #menu__item__fist{
+        margin-top: 70px;
+    }
     /* ACA VAN ESTILOS DE SECTION */
-
+    #container__te-ayudamos__img{
+        min-height: 400px;
+        min-width: 400px;
+    }
+    #container__te-ayudamos a{
+        width: 50%;
+        min-width: 150px;
+    }
     /* FOOTER */
     .footer__container__contact div{
         flex-direction: column;
