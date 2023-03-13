@@ -252,6 +252,7 @@ a{
     z-index: -2;
 }
 
+
 /* FOOTER */
 .footer__container__letters{
     text-align: start;
@@ -363,6 +364,9 @@ a{
     #container__te-ayudamos a{
         width: 30%;
     }
+    
+    
+ 
     /* FOOTER */
     .footer__container{
         width: 100%;
