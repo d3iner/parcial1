@@ -441,6 +441,30 @@ a{
     width: 35%;
 
 }
+#container-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.container__testimonio__card__container{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-around;
+}
+.container__testimonio__card{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border: black 1px solid;
+}
+.img__quotes{
+    height: 50px;
+    width: 50px;
+}
 
 /* FOOTER */
 .footer__container__letters{
