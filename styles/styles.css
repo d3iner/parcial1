@@ -15,7 +15,7 @@ body{
 footer{
     display: flex;
     background-color: black;
-    padding-top: 40px;
+    padding-block: 40px;
     border-radius: 0px 158px 0px 0px;
 }
 footer h1,
@@ -230,6 +230,10 @@ a{
     color: rgba(51, 27, 59, 0.66);
 
 }
+#container_acerca_de-nostros{
+    width: 60%;
+}
+#container_acerca_de-nostros a,
 #container__te-ayudamos a{
     width: 40%;
     padding-block: 20px;
@@ -251,6 +255,7 @@ a{
     height: 450px;
     width: 450px;
 }
+
 #container__image-group3{
     position: relative;
     z-index: -2;
@@ -322,6 +327,14 @@ a{
     right: 0;
     margin-top: 100px;
 }
+#container-3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+#container_acerca_de-nostros h1,
 #container_lo-que-hacemos h1{
     position: relative;
     z-index: 2;
@@ -330,9 +343,20 @@ a{
     font-size: 48px;
     font-weight: lighter;
     line-height: 106.3%;
-    text-align: center;
+    text-align: center !important;
     letter-spacing: -0.01em;
+    text-align: left;
     color: #331B3B;
+}
+#container-3__title::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background-color: #FDC021;
+    height: 8px;
+    width: 18%;
+    bottom: 14px;
+    left: 30%;
 }
 #container-2__title::after{
     position: absolute;
@@ -344,17 +368,79 @@ a{
     bottom: 10px;
     right: 36%;
 }
+#container_acerca_de-nostros h1 b,
 #container_lo-que-hacemos h1 b{
     font-weight: bolder;
 }
+#container_acerca_de-nostros h1 p,
 #container_lo-que-hacemos h1 p{
     height: 60px;
 }
-#container__image-group4{
+#container__image-group4,
+#container__image-works,
+#container__trabajos-recientes{
     width: 1500px;
     min-width: 1500px;
 }
 
+.container__acerca-de-nosotros__p{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 146.3%;
+    /* or 25px */
+
+    letter-spacing: 0.02em;
+
+    margin-top: 20px;
+
+    color: rgba(51, 27, 59, 0.66);
+}
+
+
+#container__trabajos-recientes__letters{
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    justify-content: space-evenly;
+    margin-inline: 50px;
+}
+#container__trabajos-recientes__letters h1{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 106.3%;
+    font-weight: lighter;
+    /* or 51px */
+
+    letter-spacing: -0.01em;
+
+    color: #331B3B;
+    text-align: left;
+    width: 50%;
+}
+#container__trabajos-recientes__letters h1 b{
+    font-weight: bolder;
+}
+.container__trabajos-recientes__p{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 146.3%;
+    /* or 25px */
+
+    letter-spacing: 0.02em;
+
+    color: #331B3B;
+    width: 35%;
+
+}
 
 /* FOOTER */
 .footer__container__letters{
@@ -457,6 +543,16 @@ a{
         align-items: end;
         width: 100%;
     }
+    #container__image-group6{
+        margin-top: -100px;
+        align-items: center;
+    }
+    #container__image-group6 img{
+        align-items: start;
+        justify-content: start;
+        height: 60%;
+        width: 60%;
+    }
     #container__te-ayudamos__img{
         position: relative;
         height: 60%;
@@ -469,9 +565,27 @@ a{
     #container__te-ayudamos a{
         align-items: start;
     }
+    #container-3{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
+        overflow: hidden;
+    }
+    #container-3 h1,
+    #container-3 p{
+        text-align: center;
+    }
+    #container-3__title::after{
+        left: 160px;
+        width: 80%;
+    }
+    #container_acerca_de-nostros{
+        align-items: center;
+    }
     
-    
- 
     /* FOOTER */
     .footer__container{
         width: 100%;
