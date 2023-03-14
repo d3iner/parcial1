@@ -205,7 +205,7 @@ a{
     content: "";
     background-color: #FDC021;
     height: 18px;
-    width: 55%;
+    width: 30%;
     bottom: 23px;
     left: 0;
 }
@@ -229,6 +229,9 @@ a{
     letter-spacing: 0.02em;
     color: rgba(51, 27, 59, 0.66);
 
+}
+#container-2{
+    overflow: hidden;
 }
 #container_acerca_de-nostros{
     width: 60%;
@@ -272,6 +275,7 @@ a{
     flex-direction: row !important;
     justify-content:center;
     padding-top: 100px;
+    overflow: hidden;
 }
 .container__card__cards{
     display: flex;
@@ -354,9 +358,9 @@ a{
     content: "";
     background-color: #FDC021;
     height: 8px;
-    width: 18%;
+    width: 11%;
     bottom: 14px;
-    left: 30%;
+    right: 30%;
 }
 #container-2__title::after{
     position: absolute;
@@ -367,6 +371,44 @@ a{
     width: 13%;
     bottom: 10px;
     right: 36%;
+}
+#container-4__title::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background-color: #FDC021;
+    height: 8px;
+    width: 11%;
+    bottom: 3px;
+    left: 10%;
+}
+#container__nuestros-testimonios__titulo h1{
+    position: relative;
+    z-index: 2;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 48px;
+    line-height: 110.8%;
+    /* or 53px */
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #331B3B;
+}
+#container__nuestros-testimonios__titulo h1 p{
+    font-weight: lighter;
+}
+#container__nuestros-testimonios__titulo h1::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    background-color: #FDC021;
+    height: 9px;
+    width: 20%;
+    bottom: 4px;
+    right: 4%;
 }
 #container_acerca_de-nostros h1 b,
 #container_lo-que-hacemos h1 b{
@@ -381,6 +423,10 @@ a{
 #container__trabajos-recientes{
     width: 1500px;
     min-width: 1500px;
+}
+#container__image-works{
+    height: 720px;
+    margin-left: 170px;
 }
 
 .container__acerca-de-nosotros__p{
@@ -406,7 +452,7 @@ a{
     flex-direction: row;
     align-items: center;
     text-align: left;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-inline: 50px;
 }
 #container__trabajos-recientes__letters h1{
@@ -427,7 +473,7 @@ a{
 #container__trabajos-recientes__letters h1 b{
     font-weight: bolder;
 }
-.container__trabajos-recientes__p{
+.trabajos-recientes__p{
     font-family: 'Hind Vadodara', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -438,32 +484,136 @@ a{
     letter-spacing: 0.02em;
 
     color: #331B3B;
-    width: 35%;
+    width: 38%;
 
 }
+.container__image-works__cards{
+    position: absolute;
+    z-index: 10;
+    bottom: 70px;
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+    margin-left: -170px;
+    align-items: center;
+    justify-content: center;
+}
+.container__image-works__cards__card{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}.container__image-works__cards__card img{
+    height: 300px;
+    width: 300px;
+    margin-block: 15px;
+    margin-inline: 60px;
+    object-fit: cover;
+}
+.card__letters__container{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    margin-inline: 30px;
+}
+.card__letters__container p{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 146.3%;
+    /* or 35px */
+
+
+    color: #331B3B;
+}
+.card__letters__container a{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 146.3%;
+    padding-block: 2px;
+    padding-inline: 10px;
+    color: #331B3B;
+    border: 1px solid #343434;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
 #container-5{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-block: 80px;
 }
 .container__testimonio__card__container{
     display: flex;
     flex-direction: row !important;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .container__testimonio__card{
     display: flex;
-    width: 40%;
+    height: 320px;
+    width: 450px;
+    padding-inline: 30px;
+    margin-block: 50px;
+    margin-inline: 50px;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
-    border: black 1px solid;
+    justify-content: center;        
+    background: #FFFFFF;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+}
+.container__testimonio__card p{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 159.3%;
+    /* or 25px */
+
+    letter-spacing: 0.02em;
+
+    color: #331B3B;
 }
 .img__quotes{
     height: 50px;
     width: 50px;
+}
+.container__nuestros-testimonios__p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.container__nuestros-testimonios__autor{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.container__nuestros-testimonios__autor p{
+    font-family: 'Hind Vadodara', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 159.3%;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+.autor-dash{
+    width: 10px;
+    margin-right: 8px;
+    border-top: 3px solid #FDC221;
 }
 
 /* FOOTER */
@@ -556,6 +706,9 @@ a{
         width: 100%;
         right: 0;
     }
+    #container-2{
+        margin-top: 20px;
+    }
     #container__te-ayudamos{
         align-items: start;
         margin-top: 0px;
@@ -594,7 +747,7 @@ a{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        margin: 0px;
+        margin-bottom: 50px;
         width: 100%;
         overflow: hidden;
     }
@@ -608,6 +761,36 @@ a{
     }
     #container_acerca_de-nostros{
         align-items: center;
+    }
+    #container__trabajos-recientes__letters{
+        top: 30px;
+    }
+    .container__image-works__cards{
+        position: absolute;
+        top: 35%;
+        height: 400px;
+    }
+    .container__image-works__cards__card{
+        margin-block: 10px;
+    }
+    .container__image-works__cards__card img{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+    }
+    .container__image-works__cards__card p,
+    .container__image-works__cards__card a{
+        font-size: 16px;
+    }
+    #container__image-works{
+        height: 620px;
+        margin-left: 170px;
+    }
+    #container__nuestros-testimonios__titulo h1::after{
+        right: 35%;
+    }
+    .container__testimonio__card{
+        width: 80%;
     }
     
     /* FOOTER */
@@ -713,27 +896,86 @@ a{
         width: 50%;
         min-width: 150px;
     }
+    #container-3{
+        padding-top: 100px;
+    }
     .container__card{
         display: flex;
         flex-direction: column !important;
+        align-items: center;
         justify-content:center;
         padding-top: 0px;
     }
     #container_lo-que-hacemos{
         margin-top: 5px;
     }
-    .container__card__cards{
-        display: flex;
-        justify-content: start;
-        padding: 15px;
-        margin-block: 5px;
-        height: 120px;
+    #container_acerca_de-nostros a{
         width: 80%;
-        margin-inline: 25px;
+    }
+    #container__image-group4{
+        height: 800px;
+    }
+    #container-4__title::after{
+        top: 100px;
+        right: 50%;
+        bottom: auto;
+        left: auto;
+    }
+    .container__card__cards{
+        margin: 10px;
+        top: 30%;
     }
     .container__card__cards h1{
         height: 16px !important;
         min-height: 16px !important;
+    }
+    #container__trabajos-recientes__letters{
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 10px;
+        top: 30px;
+        width: 100%;
+    }
+    #container__trabajos-recientes__letters h1,
+    #container__trabajos-recientes__letters p{
+        max-width: 300px;
+        margin-bottom: 10px;
+        height: 50%;
+        width: 80%;
+    }
+    .trabajos-recientes__p{
+        display: none;
+    }
+    .container__image-works__cards{
+        position: absolute;
+        top: 29%;
+        height: 550px;
+        flex-direction: column !important;
+    }
+    .container__image-works__cards__card{
+        height: 600px;
+        margin-block: 10px;
+    }
+    .container__image-works__cards__card img{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+    }
+    .container__image-works__cards__card p,
+    .container__image-works__cards__card a{
+        font-size: 16px;
+
+    }
+    #container__image-works{
+        height: 1000px;
+        margin-left: 170px;
+    }
+    .container__testimonio__card{
+        padding-block: 20px;
+        height: 70%;
+    }
+    .container__nuestros-testimonios__p {
+        margin-block: 10px;
     }
     /* FOOTER */
     .footer__container__contact div{
